@@ -1,0 +1,291 @@
+
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} 
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+     header {
+      background-color: #333;
+      color: white;
+      padding: 1em;
+      text-align: center;
+      
+    } 
+
+    nav {
+      background-color: #555;
+       overflow: hidden; 
+       border: 4px solid  #333;;
+    }
+
+    nav a {
+        
+       float: left; 
+       display: block; 
+      color: white;
+      text-align: center;
+       padding: 14px 16px;       text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: gray;
+    }
+
+     section {
+      display: none;
+      padding: 20px;
+    } 
+
+     section:target {
+      display: block;
+    } 
+
+    #home:target, body:not(:has(:target)) #home {
+      display: block;
+    }
+    section{
+        background-color:gray;
+    }
+    #about {
+  background-color: #d9e0ec;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+   width: 100;
+     height: 70vh;
+}
+
+#home{
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    border-radius: 8px;
+    background-color: #d9e0ec;
+    width: 100vw;
+     height: 90 vh;
+     
+}
+
+#contact{
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    border-radius: 8px;
+    background-color: #d9e0ec;
+    width: 100;
+    padding-left: 450px;
+     height: 80vh;
+     bottom: 20px;
+}
+#Facility{
+    padding-left: 450px;
+    font-family: Arial, sans-serif;
+    border-radius: 8px;
+    background-color: #d9e0ec;
+    width: 100;
+     height: 70vh;
+     position: relative;
+
+     
+}
+#Location{
+    padding-left: 550px;
+   top: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #d9e0ec; 
+     width: 100;
+     height: 70vh;
+     
+}
+
+/* #Gallery img{
+     padding: 30px; 
+    background-color: #d9e0ec; 
+    width: 350px;
+    height: auto;
+    right: 350px;
+    position: relative;
+    top: 50px;
+} */
+ .image-grid{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 10px;
+    max-width: 600px;
+    margin: auto;
+
+ }
+ .image-grid img{
+    width: 500px;
+    height: auto;
+    border: 2px solid #ccc;
+     object-fit: cover;
+ }
+#Gallery{
+    text-align: center; 
+    width: 100vw;
+     height: 120vh; 
+}
+.mar{
+    background-color:#d9e0ec; 
+    color: brown;
+}
+#Placement{
+    padding-left: 500px;
+    font-family: Arial, sans-serif;
+    background-color: #d9e0ec;
+    width: 100;
+     height: 70vh; 
+
+}
+#Sports{
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #d9e0ec; 
+    width: 100;
+     height: 70vh; 
+
+}
+#chief Guest img{
+   
+   height: 30px;
+   padding-left: 50px;
+   position: relative;
+}
+#chief Guest{
+    text-align: center;
+}
+.form-grid {
+  display: grid;
+   grid-template-columns: 1fr 1fr; 
+   gap: 15px 20px; 
+}
+
+.form-grid label {
+  text-align: right;
+   padding: 10px; 
+   align-self: center;
+} 
+
+.form-grid input,
+.form-grid select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.form-button {
+  text-align: center;
+  margin-top: 20px;
+}
+.college img{
+    width: 100px;
+    bottom: 400px;
+}
+.Slider{
+     width: 100;
+     height: 70vh; 
+     position: relative;
+     overflow: hidden; 
+}
+
+.slide {
+   width: 100vw;
+    height: 70vh;
+   position: absolute;
+   animation: slideAnimation 9s infinite;
+    opacity: 0;
+   transition: opacity 1s ease-in-out;
+   object-fit: cover;
+  text-align: center;
+  justify-content: center;
+
+}
+#slide1 {
+  animation-delay: 2s;
+}
+#slide2 {
+  animation-delay: 4s;
+}
+#slide3 {
+  animation-delay: 6s;
+}
+@keyframes slideAnimation {
+  0% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#img1{
+    right: 150px;
+    position: relative;
+    border: 4px solid  #333;;
+}
+#img2{
+    position: relative;
+    left: 100px;
+    bottom: 20px;
+    width: 500px;
+    height: 300px;
+    bottom: 60px;
+    border: 4px solid  #333;;
+}
+#img3{
+    position: relative;
+    top:90px;
+    width: 650px;
+    right: 150px;
+    border: 4px solid  #333;;
+    
+}
+#img4{
+    position: relative;
+    left: 80px;
+    width: 500px;
+    height: 300px;
+    top: 80px;
+    border: 4px solid  #333;
+    
+}
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+}
+#sports-image{
+ position: relative;
+  left: 670px;
+  bottom: 170px;
+  width: 800px;
+  height: 500px;
+}
+button{
+  left: 1100px;
+  position: relative;
+  top: 10px;
+  background-color: #333;
+  color:blue;
+}
+
+
+
+
+
+
+
+
+
+
